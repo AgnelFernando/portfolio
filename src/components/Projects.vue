@@ -1,26 +1,42 @@
 <template>
     <div>
         <Title titlename="Projects" />
-        <div class="flex container flex-wrap justify-center">
-            <div v-for="(project, index) in projects" :key="index" class="flex flex-col w-2/5 h-1/3 m-6 bg-white shadow rounded-lg">
-                <div class="flex justify-between">
-                    <h3 class="text-xl px-5 py-3 text-emerald">{{ project.name }}</h3>
-                    <a :href="project.link" target="_blank" class="self-center mr-2">
-                        <img class="inline h-6 w-6 m-1 hover:shadow" src="../assets/link-icon.svg" alt="Link Icon"></a>
+        <div class="flex flex-wrap justify-around container">
+            <div v-for="(project, index) in projects" 
+                :key="index" 
+                class="m-3 rounded-lg border overflow-hidden bg-white border-stone-200 shadow-lg w-96 flex flex-col h-full">
+    
+                <!-- Project Image -->
+                <div class="w-full relative">
+                    <img :src="project.image" alt="Project Image" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-transparent via-transparent to-black/60"></div>
                 </div>
-                <div class="flex">
-                    <img :src="project.image" />
-                </div>
-                <p class="mx-3 my-6">{{ project.description }}</p>
-                <div class="flex flex-wrap m-3">
-                    <div v-for="(tech, ti) in project.technologies" :key="ti"
-                        class="flex items-center rounded-full bg-greenBlue shadow-lg shadow-greenBlue px-3 py-1 m-1.5 text-xs font-medium leading-5 text-white">
-                        {{ tech }}
+    
+                <!-- Project Details -->
+                <div class="p-4 flex-grow">
+                    <h6 class="font-bold text-lg text-gray-900">{{ project.name }}</h6>
+                    <p class="text-gray-600 mt-2">{{ project.description }}</p>
+    
+                    <!-- Technologies -->
+                    <div class="flex flex-wrap mt-4 gap-2">
+                        <span v-for="(tech, ti) in project.technologies" :key="ti" 
+                            class="px-2 py-1 text-sm font-medium text-gray-700 bg-gray-200 rounded-md">
+                            {{ tech }}
+                        </span>
                     </div>
                 </div>
+    
+                <!-- View More Button (Properly at Bottom) -->
+                <div class="mt-auto p-3 flex justify-end">
+                    <button @click="openProject(project.link)"  class="bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-700 transition">
+                        View More
+                    </button>
+                </div>
+    
             </div>
         </div>
     </div>
+    
 </template>
 
 <script>
@@ -31,9 +47,25 @@ export default {
     components: {
         Title
     },
+    methods: {
+        openProject(link) {
+            if (link) {
+                window.open(link, "_blank"); // Opens in a new tab
+            } else {
+                console.warn("No link provided for this project.");
+            }
+        }
+    },
     data() {
         return {
             projects: [
+                {
+                    name: 'Breakout',
+                    link: 'https://github.com/gilesagnel/DRL-games',
+                    image: require('../assets/images/projects/breakout.gif'),
+                    description: 'Play the Atari Breakout game using a Deep Q-Network (DQN)',
+                    technologies: ['Pytorch', 'Python', 'Reinforcement Learning', 'Deep Learning']
+                },
                 {
                     name: 'Seed Image Classification',
                     link: 'https://github.com/gilesagnel/FGVC',
@@ -49,19 +81,12 @@ export default {
                     technologies: ['Pytorch', 'Python', 'Reinforcement Learning', 'Deep Learning']
                 },
                 {
-                    name: 'Breakout',
-                    link: 'https://github.com/gilesagnel/DRL-games',
-                    image: require('../assets/images/projects/breakout.png'),
-                    description: 'Play the Atari Breakout game using a Deep Q-Network (DQN)',
-                    technologies: ['Pytorch', 'Python', 'Reinforcement Learning', 'Deep Learning']
-                },
-                {
                     name: 'Trajectory Following',
                     link: 'https://github.com/gilesagnel/TrajectoryFollowing',
                     image: require('../assets/images/projects/tf.png'),
                     description: 'Trajectory Following Robot use deep reinforcement learning',
                     technologies: ['Pytorch', 'Python', 'Reinforcement Learning', 'Deep Learning', 'ROS',
-                                  'Gazebo']
+                        'Gazebo']
                 },
                 {
                     name: 'Student Dropout Prediction',

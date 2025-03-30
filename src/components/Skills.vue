@@ -50,6 +50,9 @@ export default {
               { name: 'ROS', category: "Robotics", image: require("../assets/images/skills/ros.png") },
               { name: 'Gazebo', category: "Robotics", image: require("../assets/images/skills/gazebo.png") },
               { name: 'Unity', category: "Robotics", image: require("../assets/images/skills/unity.png") },
+              { name: 'UR3', category: "Robotics", image: require("../assets/images/skills/ur3.webp") },
+              { name: 'JetBot', category: "Robotics", image: require("../assets/images/skills/jetbot.jpg") },
+              { name: 'Unitree', category: "Robotics", image: require("../assets/images/skills/unitree.png") },
               
               { name: 'Java', category: "App Dev", image: require("../assets/images/skills/java.svg")},
               { name: "JavaScript", category: "App Dev", image: require("../assets/images/skills/javascript.png")},
