@@ -6,7 +6,7 @@
       ></a>
     </div>
     <div>
-      <a href="https://github.com/gilesagnel" target="_blank"
+      <a href="https://github.com/agnelfernando" target="_blank"
         ><i class="fab fa-github-square text-white  hover:text-greenBlue text-4xl"></i
       ></a>
     </div>

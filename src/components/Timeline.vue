@@ -3,23 +3,39 @@
     <Title titlename="Experiences" />
     <div class="relative flex flex-col container">
       <div class="absolute border-greenBlue border-2 h-full left-1/2"></div>
-      <div v-for="(event, index) in events" :key="index"
-        :class="['flex my-5', isExp(event) ? 'flex-row' : 'flex-row-reverse']">
-        <div class="p-4 bg-jetLight rounded-lg hover:shadow-lg w-45p text-whiteLight">
-          <h3 class="text-lg text-white">{{ event.title }}
-            <a v-if="event.link" :href="event.link" target="_blank"><img class="inline h-5 w-5 mx-1 hover:shadow"
-                src="../assets/link-icon.svg" alt="Link Icon"></a>
-          </h3>
-
-          <h4 class="text-md">{{ event.subtitle }}</h4>
-          <div class="mt-2" v-html="event.description"></div>
+      <transition-group name="expand" tag="div">
+        <div v-for="event in expanded ? events : events.slice(0, 2)" :key="event.title"
+          :class="['flex my-5', isExp(event) ? 'flex-row' : 'flex-row-reverse']">
+          <div class="p-4 bg-jetLight rounded-lg hover:shadow-lg w-45p text-whiteLight">
+            <h3 class="text-lg text-white">{{ event.title }}
+              <a v-if="event.link" :href="event.link" target="_blank">
+                <img class="inline h-5 w-5 mx-1 hover:shadow" src="../assets/link-icon.svg" alt="Link Icon">
+              </a>
+            </h3>
+            <h4 class="text-md">{{ event.subtitle }}</h4>
+            <div class="mt-2" v-html="event.description"></div>
+          </div>
+          <div class="flex w-10p justify-center z-10 ml-1">
+            <div class="p-1.5 bg-mayaBlue rounded-full border-white border-m h-1 w-1 self-center" />
+          </div>
+          <div :class="['text-sm text-silver self-center w-45p', isExp(event) ? 'text-left' : 'text-right']">
+            {{ event.date }}
+          </div>
         </div>
-        <div class="flex w-10p justify-center z-10 ml-1">
-          <div class="p-1.5 bg-mayaBlue rounded-full border-white border-m h-1 w-1 self-center" />
-        </div>
-        <div :class="['text-sm text-silver self-center w-45p', isExp(event) ? 'text-left' : 'text-right']">{{ event.date
-          }}</div>
-      </div>
+      </transition-group>
+    </div>
+    <div class="flex justify-center mt-2">
+      <button @click="expanded = !expanded" class="flex py-3 text-blue-500 flex items-center hover:text-blue-700 transition">
+        <span class="transition-opacity duration-300">{{ expanded ? 'View Less' : 'View More' }}</span>
+        <svg v-if="!expanded" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-down" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+          <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+        </svg>
+        <svg v-else xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-up" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708z"/>
+          <path fill-rule="evenodd" d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708z"/>
+        </svg>
+      </button>
     </div>
   </div>
 </template>
@@ -32,6 +48,7 @@ export default {
   components: { Title },
   data() {
     return {
+      expanded: false,
       events: [
         { title: 'National Engineering college', subtitle: 'Bachelor of Engineering', date: 'Jun 2013 - Apr 2017', description: 'Completed Bachelor of Engineering in Mechanical Engineering', type: 'edu', link: "https://nec.edu.in/" },
         { title: 'Zoho', subtitle: 'Software Engineer Intern', date: 'Jan 2019 - Mar 2019', description: 'I worked on the Zoho Creator app which uses java struts framework and ReactJs.', type: 'exp', link: "https://www.zoho.com/" },
@@ -81,5 +98,24 @@ export default {
 
 .border-m {
   border-width: medium;
+}
+
+/* Smooth expand animation */
+.expand-move {
+  transition: transform 1.0s ease;
+}
+
+.expand-enter-active, .expand-leave-active {
+  transition: all 1.0s ease-in-out;
+}
+
+.expand-enter, .expand-leave-to {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.expand-enter-to, .expand-leave {
+  opacity: 1;
+  transform: translateY(0);
 }
 </style>

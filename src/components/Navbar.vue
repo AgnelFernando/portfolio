@@ -1,16 +1,6 @@
 <template>
   <nav class="flex flex-nowrap justify-between items-center text-gray-700 dark:text-gray-300 xl:text-xl text-base pb-8 xl:pb-12 flex-col lg:flex-row lg:space-y-0 space-y-5">
-    <!-- <div>
-      <router-link class="pr-6 font-light hover:text-gray-500" to="/">{{$t('Home')}}</router-link>
-      <router-link class="pr-6 font-light hover:text-gray-500" to="/">{{$t('Resume')}}</router-link>
-      <button class="rounded-lg bg-turquoise dark:bg-blue-500 hover:bg-fakhti py-1 px-2 lg:py-2 lg:px-4 text-sm lg:text-base text-white font-semibold" @click="goToRouter('Contact')">
-        {{$t('Contact')}}
-      </button>
 
-      <i v-if="!isDarkMode" @click="ToogleDarkMode" class="fas fa-moon ml-6 cursor-pointer border px-2 py-1 rounded-xl"></i>
-      <i v-else @click="ToogleDarkMode" class="fas fa-sun ml-6 cursor-pointer text-yellow-500 border px-2 py-1 rounded-xl"></i>
-
-    </div> -->
   </nav>
 </template>
 

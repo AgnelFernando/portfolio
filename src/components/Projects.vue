@@ -61,28 +61,35 @@ export default {
             projects: [
                 {
                     name: 'Breakout',
-                    link: 'https://github.com/gilesagnel/DRL-games',
+                    link: 'https://github.com/agnelfernando/DRL-games',
                     image: require('../assets/images/projects/breakout.gif'),
                     description: 'Play the Atari Breakout game using a Deep Q-Network (DQN)',
                     technologies: ['Pytorch', 'Python', 'Reinforcement Learning', 'Deep Learning']
                 },
                 {
-                    name: 'Seed Image Classification',
-                    link: 'https://github.com/gilesagnel/FGVC',
-                    image: require('../assets/images/projects/seeds.png'),
-                    description: 'Fine-Grained Image Classification for Seed Images',
-                    technologies: ['Pytorch', 'Python', 'Computer Vision']
+                    name: 'Highway',
+                    link: undefined,
+                    image: require('../assets/images/projects/highway.gif'),
+                    description: 'Train an agent to navigate optimally in a highway environment using DQN, PPO, and A2C to achieve optimal performance.',
+                    technologies: ['Pytorch', 'Python', 'Reinforcement Learning', 'Deep Learning']
                 },
                 {
                     name: 'Mountain Climping',
-                    link: 'https://github.com/gilesagnel/DRL-games',
+                    link: 'https://github.com/agnelfernando/DRL-games',
                     image: require('../assets/images/projects/mountain_car.png'),
                     description: 'Play the Mountain Climbing game using Hindsight Experience Replay (HER) and Deep Q-Network (DQN)',
                     technologies: ['Pytorch', 'Python', 'Reinforcement Learning', 'Deep Learning']
                 },
                 {
+                    name: 'Seed Image Classification',
+                    link: 'https://github.com/agnelfernando/FGVC',
+                    image: require('../assets/images/projects/seeds.png'),
+                    description: 'Fine-Grained Image Classification for Seed Images',
+                    technologies: ['Pytorch', 'Python', 'Computer Vision']
+                },
+                {
                     name: 'Trajectory Following',
-                    link: 'https://github.com/gilesagnel/TrajectoryFollowing',
+                    link: 'https://github.com/agnelfernando/TrajectoryFollowing',
                     image: require('../assets/images/projects/tf.png'),
                     description: 'Trajectory Following Robot use deep reinforcement learning',
                     technologies: ['Pytorch', 'Python', 'Reinforcement Learning', 'Deep Learning', 'ROS',
@@ -90,14 +97,14 @@ export default {
                 },
                 {
                     name: 'Student Dropout Prediction',
-                    link: 'https://github.com/gilesagnel/StudentDropoutML',
+                    link: 'https://github.com/agnelfernando/StudentDropoutML',
                     image: require('../assets/images/projects/dropout.jpeg'),
                     description: 'The machine learning model will predict whether a student will drop out of the course based on the given data.',
                     technologies: ['Scikit-learn', 'Python', 'Jupyter']
                 },
                 {
                     name: 'CycleGan',
-                    link: 'https://github.com/gilesagnel/CycleGan',
+                    link: 'https://github.com/agnelfernando/CycleGan',
                     image: require('../assets/images/projects/cycleGan.png'),
                     description: 'Implementation of CycleGan in Pytorch',
                     technologies: ['Pytorch', 'Python', 'Computer Vision', 'Generative Model']
