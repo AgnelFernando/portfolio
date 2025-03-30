@@ -64,28 +64,21 @@ export default {
                     link: 'https://github.com/agnelfernando/DRL-games',
                     image: require('../assets/images/projects/breakout.gif'),
                     description: 'Play the Atari Breakout game using a Deep Q-Network (DQN)',
-                    technologies: ['Pytorch', 'Python', 'Reinforcement Learning', 'Deep Learning']
+                    technologies: ['Pytorch', 'Python', 'Reinforcement Learning', 'Deep Learning', 'DQN']
                 },
                 {
                     name: 'Highway',
                     link: undefined,
                     image: require('../assets/images/projects/highway.gif'),
                     description: 'Train an agent to navigate optimally in a highway environment using DQN, PPO, and A2C to achieve optimal performance.',
-                    technologies: ['Pytorch', 'Python', 'Reinforcement Learning', 'Deep Learning']
+                    technologies: ['Pytorch', 'Python', 'Reinforcement Learning', 'Deep Learning', 'PPO', 'A2C', 'DQN']
                 },
                 {
                     name: 'Mountain Climping',
                     link: 'https://github.com/agnelfernando/DRL-games',
-                    image: require('../assets/images/projects/mountain_car.png'),
+                    image: require('../assets/images/projects/mountain_car.gif'),
                     description: 'Play the Mountain Climbing game using Hindsight Experience Replay (HER) and Deep Q-Network (DQN)',
-                    technologies: ['Pytorch', 'Python', 'Reinforcement Learning', 'Deep Learning']
-                },
-                {
-                    name: 'Seed Image Classification',
-                    link: 'https://github.com/agnelfernando/FGVC',
-                    image: require('../assets/images/projects/seeds.png'),
-                    description: 'Fine-Grained Image Classification for Seed Images',
-                    technologies: ['Pytorch', 'Python', 'Computer Vision']
+                    technologies: ['Pytorch', 'Python', 'Reinforcement Learning', 'Deep Learning', 'DQN', 'HER']
                 },
                 {
                     name: 'Trajectory Following',
@@ -94,6 +87,13 @@ export default {
                     description: 'Trajectory Following Robot use deep reinforcement learning',
                     technologies: ['Pytorch', 'Python', 'Reinforcement Learning', 'Deep Learning', 'ROS',
                         'Gazebo']
+                },
+                {
+                    name: 'Seed Image Classification',
+                    link: 'https://github.com/agnelfernando/FGVC',
+                    image: require('../assets/images/projects/seeds.png'),
+                    description: 'Fine-Grained Image Classification for Seed Images',
+                    technologies: ['Pytorch', 'Python', 'Computer Vision']
                 },
                 {
                     name: 'Student Dropout Prediction',
