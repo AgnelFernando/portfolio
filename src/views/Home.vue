@@ -31,7 +31,7 @@
             <img class="rounded-3xl" src="../assets/agnel.jpg" alt="Agnel" />
           </div>
           <div class="flex flex flex-col mt-8">
-            <a href="https://drive.google.com/file/d/15yHJjoG8r2xnRB1i7hS9qlHPhuvbWs_2/view?usp=sharing" target="_blank"
+            <a href="https://drive.google.com/file/d/1fDxibWnALjLMyubYONnmi1vciGB0hUDn/view?usp=sharing" target="_blank"
               class="text-xs text-flashWhite lg:text-base bg-transparent 2xl:w-1/3 hover:bg-greenBlue font-semibold uppercase text-center hover:text-flashWhite py-2 px-8 border border-white hover:border-transparent rounded mx-20">
               {{ $t('seeResume') }}
             </a>
