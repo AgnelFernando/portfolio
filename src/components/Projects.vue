@@ -60,6 +60,13 @@ export default {
         return {
             projects: [
                 {
+                    name: 'UR3 VLA',
+                    link: undefined,
+                    image: require('../assets/images/projects/ur3vla.gif'),
+                    description: 'Fine-tuned an Open-VLA (Vision Language Action) model to operate a UR3 robot arm.',
+                    technologies: ['Pytorch', 'Python', 'Imitation Learning', 'Deep Learning', 'VLA']
+                },
+                {
                     name: 'Breakout',
                     link: 'https://github.com/agnelfernando/DRL-games',
                     image: require('../assets/images/projects/breakout.gif'),
