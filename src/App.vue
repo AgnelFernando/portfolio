@@ -1,6 +1,6 @@
 <template class="dark font-sans">
   <div id="app" class="bg-jet">
-    <div class="container mx-auto pt-6 w-full max-width=100%">
+    <div class="container mx-auto pt-1 w-full max-width=100%">
       <!-- <v-navbar /> -->
       <router-view />
     </div>
