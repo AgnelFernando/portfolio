@@ -60,6 +60,20 @@ export default {
         return {
             projects: [
                 {
+                    name: 'NeuroBrush',
+                    link: undefined,
+                    image: require('../assets/images/projects/neurobrush.gif'),
+                    description: 'A brain-controlled art system that uses Emotiv BCI to command a UR3 robotic arm for drawing and painting. It blends neuroscience, robotics, and creativity—enabling users to create art using just their thoughts.',
+                    technologies: ['BCI', 'Websocket', 'UR3', 'Python']
+                },
+                {
+                    name: 'Cerberus',
+                    link: undefined,
+                    image: require('../assets/images/projects/cerberus.gif'),
+                    description: 'A robot dog equipped with camera, sensors, and intelligence to autonomously patrol and detect unusual activities.',
+                    technologies: ['Nav2', 'Ros2', 'SLAM', 'YOLOv8', 'Python']
+                },
+                {
                     name: 'UR3 VLA',
                     link: undefined,
                     image: require('../assets/images/projects/ur3vla.gif'),
