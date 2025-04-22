@@ -4,23 +4,23 @@
         <div class="flex flex-wrap justify-around container">
             <div v-for="(project, index) in projects" 
                 :key="index" 
-                class="m-3 rounded-lg border overflow-hidden bg-white border-stone-200 shadow-lg w-96 flex flex-col h-full">
+                class="m-3 rounded-lg border overflow-hidden bg-card-background border-border shadow-lg w-96 flex flex-col h-full">
     
                 <!-- Project Image -->
                 <div class="w-full relative">
                     <img :src="project.image" alt="Project Image" class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-tr from-transparent via-transparent to-black/60"></div>
+                    <div class="absolute inset-0 bg-gradient-to-tr from-transparent via-transparent to-overlay"></div>
                 </div>
     
                 <!-- Project Details -->
                 <div class="p-4 flex-grow">
-                    <h6 class="font-bold text-lg text-gray-900">{{ project.name }}</h6>
-                    <p class="text-gray-600 mt-2">{{ project.description }}</p>
+                    <h6 class="font-bold text-lg text-card-title">{{ project.name }}</h6>
+                    <p class="text-card-body mt-2">{{ project.description }}</p>
     
                     <!-- Technologies -->
                     <div class="flex flex-wrap mt-4 gap-2">
                         <span v-for="(tech, ti) in project.technologies" :key="ti" 
-                            class="px-2 py-1 text-sm font-medium text-gray-700 bg-gray-200 rounded-md">
+                            class="px-2 py-1 text-sm font-medium text-tag-text bg-tag-background rounded-md">
                             {{ tech }}
                         </span>
                     </div>
@@ -28,7 +28,7 @@
     
                 <!-- View More Button (Properly at Bottom) -->
                 <div class="mt-auto p-3 flex justify-end">
-                    <button @click="openProject(project.link)"  class="bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-700 transition">
+                    <button @click="openProject(project.link)"  class="bg-button-base text-button-text px-4 py-2 rounded-lg shadow-md hover:bg-button-hover transition">
                         View More
                     </button>
                 </div>

@@ -2,27 +2,27 @@
   <div>
     <section id="home"
       class="flex flex-col-reverse md:flex-row justify-left xl:space-x-54 lg:space-x-34 sm:space-x-12 xl:p-8 xl:pt-1 pt-1 mx-auto mb-10">
-      <div class="w-100% flex m-12 mt-4 p-12 rounded-md bg-jet shadow-greenBlue">
+      <div class="w-100% flex m-12 mt-4 p-12 rounded-3xl bg-container-background container-shadow">
         <div class="w-2/3 flex flex-col space-y-4 pr-20">
           <div class="mt-4 xl:mt-0">
-            <h2 class="3xl:text-2xl text-flashWhite">
-              <span class="text-flashWhite lg:text-5xl tracking-normal font-bold">{{ $t('myName') }}</span>
+            <h2 class="3xl:text-2xl text-container-title">
+              <span class="lg:text-5xl tracking-normal font-bold">{{ $t('myName') }}</span>
             </h2>
           </div>
           <div>
-            <h3 class="text-flashWhite text-opacity-80 text-3xl 2xl:text-6xl tracking-normal focus-in-expand ">{{ $t('job') }}</h3>
+            <h3 class="text-container-subtitle text-opacity-80 text-3xl 2xl:text-6xl tracking-normal focus-in-expand ">{{ $t('job') }}</h3>
           </div>
           <div>
-            <h5 class="text-flashWhite text-opacity-70 text-xl 2xl:text-3xl tracking-normal focus-in-expand ">{{ $t('education') }}</h5>
+            <h5 class="text-container-subtitle text-opacity-70 text-xl 2xl:text-3xl tracking-normal focus-in-expand ">{{ $t('education') }}</h5>
           </div>
           <div>
             <p
-              class="text-sm lg:text-base leading-loose tracking-relaxed lg:leading-loose lg:tracking-relaxed text-flashWhite text-opacity-60 whitespace-pre-line">
+              class="text-sm lg:text-base leading-loose tracking-relaxed lg:leading-loose lg:tracking-relaxed text-container-subtitle text-opacity-60 whitespace-pre-line">
               Location: {{ $t('location') }}</p>
           </div>
           <div>
             <p
-              class="text-sm lg:text-base leading-loose tracking-relaxed lg:leading-loose lg:tracking-relaxed text-flashWhite text-opacity-50 whitespace-pre-line">
+              class="text-sm lg:text-base leading-loose tracking-relaxed lg:leading-loose lg:tracking-relaxed text-container-body text-opacity-50 whitespace-pre-line">
               {{ $t('Aboutme') }}</p>
           </div>
         </div>
@@ -32,7 +32,7 @@
           </div>
           <div class="flex flex flex-col mt-8">
             <a href="https://drive.google.com/file/d/1fDxibWnALjLMyubYONnmi1vciGB0hUDn/view?usp=sharing" target="_blank"
-              class="text-xs text-flashWhite lg:text-base bg-transparent 2xl:w-1/3 hover:bg-greenBlue font-semibold uppercase text-center hover:text-flashWhite py-2 px-8 border border-white hover:border-transparent rounded mx-20">
+              class="text-xs text-container-body lg:text-base bg-transparent 2xl:w-1/3 font-semibold uppercase text-center hover:bg-accent hover:text-button-text py-2 px-8 border border-border hover:border-transparent rounded mx-20">
               {{ $t('seeResume') }}
             </a>
 
@@ -203,7 +203,7 @@ export default {
   animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-.shadow-greenBlue {
+.container-shadow {
   --tw-shadow: 0 10px 36px -3px rgb(54 115 219), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 rgb(54 115 219)), var(--tw-ring-shadow, 0 0 rgb(54 115 219)), var(--tw-shadow);
 }

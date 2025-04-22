@@ -5,7 +5,7 @@
           <button 
             v-for="(tab, index) in tabs" 
             :key="index"
-            :class="['px-4 py-2', selectedTab === tab ? 'bg-blue-500 text-white' : 'bg-gray-200 text-gray-700']"
+            :class="['px-4 py-2', selectedTab === tab ? 'bg-button-base text-button-text' : 'bg-tag-background text-tag-text']"
             @click="selectedTab = tab"
           >
             {{ tab }}
@@ -14,10 +14,10 @@
 
       <div class="container flex flex-wrap gap-10">
           <div v-for="(skill, index) in filteredSkills" :key="index">
-              <div class="flex flex-row items-center bg-flashWhite p-6 w-24 h-24 lg:w-32 lg:h-32 mx-6 mb-2 rounded-lg">
+              <div class="flex flex-row items-center bg-icon-color p-6 w-24 h-24 lg:w-32 lg:h-32 mx-6 mb-2 rounded-lg">
                   <img :src="skill.image" />
               </div>
-              <div class="text-center text-flashWhite">{{skill.name}}</div>
+              <div class="text-center text-tag-text">{{skill.name}}</div>
           </div>
       </div>
   </div>

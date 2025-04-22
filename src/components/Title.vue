@@ -1,12 +1,12 @@
 <template>
     <div class="section-title flex flex-col mb-16">
-        <div class="text-center text-white text-5xl font-bold">
+        <div class="text-center text-text-title text-5xl font-bold">
             {{ titlename }}
         </div>
         <div class="flex justify-center mt-4">
-            <div :class="[lineWidthClass, 'h-0.5 bg-white text-center']" />
-            <div :class="[lineWidthClass, 'h-0.5 bg-greenBlue text-center']" />
-            <div :class="[lineWidthClass, 'h-0.5 bg-white text-center']" />
+            <div :class="[lineWidthClass, 'h-0.5 bg-icon-color text-center']" />
+            <div :class="[lineWidthClass, 'h-0.5 bg-accent text-center']" />
+            <div :class="[lineWidthClass, 'h-0.5 bg-icon-color text-center']" />
         </div>
     </div>
 </template>
