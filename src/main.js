@@ -12,7 +12,7 @@ import VueImg from 'v-img'
 Vue.use(VueImg)
 Vue.use(FlagIcon)
 
-Vue.config.productionTip = false
+Vue.config.productionTip = true
 
 new Vue({
   router,

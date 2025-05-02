@@ -117,6 +117,13 @@ export default {
                     technologies: ['Pytorch', 'Python', 'Computer Vision']
                 },
                 {
+                    name: 'Dash Video Converter',
+                    link: 'https://github.com/AgnelFernando/dash-video-converter',
+                    image: require('../assets/images/projects/dash.png'),
+                    description: 'A Python-based server application that automates the conversion of input videos into MPEG-DASH format using FFmpeg and Shaka Packager',
+                    technologies: ['Docker', 'Python', 'FFMPG', 'AWS']
+                },
+                {
                     name: 'Student Dropout Prediction',
                     link: 'https://github.com/agnelfernando/StudentDropoutML',
                     image: require('../assets/images/projects/dropout.jpeg'),

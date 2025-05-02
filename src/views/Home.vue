@@ -135,11 +135,6 @@ export default {
   computed: {
     ...mapGetters({ isTranslated: 'isTranslated' })
   },
-  methods: {
-    goToResume() {
-      this.$router.push({ name: 'Resume' })
-    }
-  },
   mounted() {
     window.addEventListener('scroll', this.$refs.scrollTop.scrollListener)
   },
@@ -207,4 +202,4 @@ export default {
   --tw-shadow: 0 10px 36px -3px rgb(54 115 219), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 rgb(54 115 219)), var(--tw-ring-shadow, 0 0 rgb(54 115 219)), var(--tw-shadow);
 }
-</style>../components/Timeline.vue
+</style>

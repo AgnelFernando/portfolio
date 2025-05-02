@@ -1,22 +1,27 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import Home from '../views/Home.vue'
+import OpenVla from '../views/blogs/OpenVla.vue'
+import NotFound from '../views/NotFound.vue'
 
 Vue.use(VueRouter)
 
-function page(path) {
-  return () => import(/* webpackChunkName: '' */ '../views/'+path+'.vue').then(m => m.default || m)
-}
 
 const routes = [
   {
     path: '/',
     name: 'Home',
-    component: page('Home')
+    component: Home
+  },
+  {
+    path: '/blog/openvla',
+    name: 'OpenVla',
+    component: OpenVla
   },
   {
     path: '*',
-    name: '404',
-    component: page('404')
+    name: 'NotFound',
+    component: NotFound
   },
   
 ]
