@@ -154,8 +154,8 @@
 </template>Conclusion
 
 <script>
-import HeaderImg from '@/assets/blog/openvla/header.jpg';
-import IntroImg from '@/assets/blog/openvla/introduction.jpg';
+import HeaderImg from '@/assets/images/blogs/openvla/header.jpg';
+import IntroImg from '@/assets/images/blogs/openvla/introduction.jpg';
 export default {
     name: "OpenVla",
     data() {

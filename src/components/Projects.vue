@@ -2,34 +2,34 @@
     <div>
         <Title titlename="Projects" />
         <div class="flex flex-wrap justify-around container">
-            <div v-for="(project, index) in projects" 
-                :key="index" @click="openProject(project.link)"
-                class="m-3 rounded-lg border overflow-hidden bg-card-background border-border shadow-lg w-96 flex flex-col h-full">
-    
+            <div v-for="(project, index) in projects" :key="index" @click="openProject(project.link)" :class="[
+                'm-3 rounded-lg border overflow-hidden bg-card-background border-border shadow-lg w-96 flex flex-col h-full transition-transform duration-200 ease-in-out cursor-default',
+                project.link ? 'transform hover:shadow-2xl hover:scale-105' : '']">
+
                 <!-- Project Image -->
                 <div class="w-full relative">
                     <img :src="project.image" alt="Project Image" class="w-full h-full object-cover">
                     <div class="absolute inset-0 bg-gradient-to-tr from-transparent via-transparent to-overlay"></div>
                 </div>
-    
+
                 <!-- Project Details -->
                 <div class="p-4 flex-grow">
-                    <h6 class="font-bold text-lg text-card-title">{{ project.name }}</h6>
-                    <p class="text-card-body mt-2">{{ project.description }}</p>
-    
+                    <h6 class="font-bold text-lg text-card-title cursor-pointer">{{ project.name }}</h6>
+                    <p class="text-card-body mt-2 cursor-pointer">{{ project.description }}</p>
+
                     <!-- Technologies -->
                     <div class="flex flex-wrap mt-4 gap-2">
-                        <span v-for="(tech, ti) in project.technologies" :key="ti" 
+                        <span v-for="(tech, ti) in project.technologies" :key="ti"
                             class="px-2 py-1 text-sm font-medium text-tag-text bg-tag-background rounded-md">
                             {{ tech }}
                         </span>
                     </div>
                 </div>
-    
+
             </div>
         </div>
     </div>
-    
+
 </template>
 
 <script>
@@ -53,6 +53,13 @@ export default {
         return {
             projects: [
                 {
+                    name: 'UR3 VLA',
+                    link: 'https://github.com/AgnelFernando/ur3-vla',
+                    image: require('../assets/images/projects/ur3vla.gif'),
+                    description: 'Fine-tuned an Open-VLA (Vision Language Action) model to operate a UR3 robot arm.',
+                    technologies: ['Pytorch', 'Python', 'Imitation Learning', 'Deep Learning', 'VLA']
+                },
+                {
                     name: 'NeuroBrush',
                     link: undefined,
                     image: require('../assets/images/projects/neurobrush.gif'),
@@ -67,13 +74,6 @@ export default {
                     technologies: ['Nav2', 'Ros2', 'SLAM', 'YOLOv8', 'Python']
                 },
                 {
-                    name: 'UR3 VLA',
-                    link: undefined,
-                    image: require('../assets/images/projects/ur3vla.gif'),
-                    description: 'Fine-tuned an Open-VLA (Vision Language Action) model to operate a UR3 robot arm.',
-                    technologies: ['Pytorch', 'Python', 'Imitation Learning', 'Deep Learning', 'VLA']
-                },
-                {
                     name: 'Breakout',
                     link: 'https://github.com/agnelfernando/DRL-games',
                     image: require('../assets/images/projects/breakout.gif'),
@@ -82,7 +82,7 @@ export default {
                 },
                 {
                     name: 'Highway',
-                    link: undefined,
+                    link: 'https://drive.google.com/drive/folders/1lAv6WS1goKB9HQl82YZREe036h_d1RVM?usp=sharing',
                     image: require('../assets/images/projects/highway.gif'),
                     description: 'Train an agent to navigate optimally in a highway environment using DQN, PPO, and A2C to achieve optimal performance.',
                     technologies: ['Pytorch', 'Python', 'Reinforcement Learning', 'Deep Learning', 'PPO', 'A2C', 'DQN']
