@@ -3,7 +3,7 @@
         <Title titlename="Projects" />
         <div class="flex flex-wrap justify-around container">
             <div v-for="(project, index) in projects" 
-                :key="index" 
+                :key="index" @click="openProject(project.link)"
                 class="m-3 rounded-lg border overflow-hidden bg-card-background border-border shadow-lg w-96 flex flex-col h-full">
     
                 <!-- Project Image -->
@@ -24,13 +24,6 @@
                             {{ tech }}
                         </span>
                     </div>
-                </div>
-    
-                <!-- View More Button (Properly at Bottom) -->
-                <div class="mt-auto p-3 flex justify-end">
-                    <button @click="openProject(project.link)"  class="bg-button-base text-button-text px-4 py-2 rounded-lg shadow-md hover:bg-button-hover transition">
-                        View More
-                    </button>
                 </div>
     
             </div>

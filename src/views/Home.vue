@@ -57,6 +57,10 @@
       <Projects />
     </section>
 
+    <section id="blogs" class="my-32">
+      <Blogs />
+    </section>
+
   </div>
 </template>
 
@@ -67,10 +71,11 @@ import VLinks from '../components/links.vue'
 import Skills from '../components/Skills.vue'
 import Timeline from '../components/Timeline.vue';
 import Projects from '../components/Projects.vue';
+import Blogs from '../components/Blogs.vue';
 
 export default {
   name: "Home",
-  components: { VLinks, Skills, Timeline, Projects },
+  components: { VLinks, Skills, Timeline, Projects, Blogs },
   data() {
     return {
       dataTimeline: [
