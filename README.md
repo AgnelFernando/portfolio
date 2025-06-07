@@ -1,5 +1,10 @@
-## Portfolio
+# Portfolio
 
-Welcome to my personal portfolio repository, a dynamic showcase of my professional journey, skills, and projects. This application is crafted using Vue.js for its robust and reactive user interface capabilities, and Tailwind CSS for efficient and responsive styling.
+This repository contains the source code for my personal portfolio website.
+Built with **Vue.js** and **Tailwind CSS**, it showcases my projects, skills and blog posts in a responsive single-page application.
+Internationalization is handled using **Vue I18n** and deployment is configured for GitHub Pages.
 
-Explore the live version of the portfolio [here](agnelfernando.github.io/portfolio)
+View the live site at [agnelfernando.github.io/portfolio](https://agnelfernando.github.io/portfolio).
+
+Inpired from https://ahmedalmory.github.io/portfolio
+
