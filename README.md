@@ -6,18 +6,5 @@ Internationalization is handled using **Vue I18n** and deployment is configured 
 
 View the live site at [agnelfernando.github.io/portfolio](https://agnelfernando.github.io/portfolio).
 
-## Development
-
-```bash
-# install dependencies
-npm install
-
-# start local dev server
-npm run serve
-
-# build for production
-npm run build
-```
-
 Inpired from https://ahmedalmory.github.io/portfolio
 
