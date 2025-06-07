@@ -19,3 +19,5 @@ npm run serve
 npm run build
 ```
 
+Inpired from https://ahmedalmory.github.io/portfolio
+
