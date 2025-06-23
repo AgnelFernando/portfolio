@@ -7,7 +7,7 @@
                 project.link ? 'transform hover:shadow-2xl hover:scale-105' : '']">
 
                 <!-- Project Image -->
-                <div class="w-full relative">
+                <div class="w-full relative" :class="project.name.toLowerCase().replace(/\s+/g, '-')">
                     <img :src="project.image" alt="Project Image" class="w-full h-full object-cover">
                     <div class="absolute inset-0 bg-gradient-to-tr from-transparent via-transparent to-overlay"></div>
                 </div>
@@ -117,6 +117,13 @@ export default {
                     technologies: ['Docker', 'Python', 'FFMPG', 'AWS']
                 },
                 {
+                    name: 'Goal Master',
+                    link: 'https://github.com/AgnelFernando/goal-master',
+                    image: require('../assets/images/projects/goalmaster.gif'),
+                    description: 'A Kotlin-based Android app for setting, managing, and tracking personal or professional goals with customizable tasks and daily planning',
+                    technologies: ['Kotlin', 'Android', 'Room DB', 'MVVM']
+                },
+                {
                     name: 'Student Dropout Prediction',
                     link: 'https://github.com/agnelfernando/StudentDropoutML',
                     image: require('../assets/images/projects/dropout.jpeg'),
@@ -136,3 +143,17 @@ export default {
     }
 }
 </script>
+<style scoped>
+.goal-master {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.goal-master img {
+    max-width: 100%;
+    max-height: 180px;
+    object-fit: contain;
+    border-radius: 0.5rem;
+}
+</style>
