@@ -60,7 +60,7 @@ export default {
                     technologies: ['Pytorch', 'Python', 'Imitation Learning', 'Deep Learning', 'VLA']
                 },
                 {
-                    name: 'NeuroBrush',
+                    name: 'Mindscape',
                     link: undefined,
                     image: require('../assets/images/projects/neurobrush.gif'),
                     description: 'A brain-controlled art system that uses Emotiv BCI to command a UR3 robotic arm for drawing and painting. It blends neuroscience, robotics, and creativity—enabling users to create art using just their thoughts.',
