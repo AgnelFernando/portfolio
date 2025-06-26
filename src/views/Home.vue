@@ -31,7 +31,7 @@
             <img class="rounded-3xl" src="../assets/agnel.jpg" alt="Agnel" />
           </div>
           <div class="flex flex flex-col mt-8">
-            <a href="https://drive.google.com/file/d/1fDxibWnALjLMyubYONnmi1vciGB0hUDn/view?usp=sharing" target="_blank"
+            <a href="/resume.html" target="_blank"
               class="text-xs text-container-body lg:text-base bg-transparent 2xl:w-1/3 font-semibold uppercase text-center hover:bg-accent hover:text-button-text py-2 px-8 border border-border hover:border-transparent rounded mx-20">
               {{ $t('seeResume') }}
             </a>

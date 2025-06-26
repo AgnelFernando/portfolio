@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <style>
+    /*Modern Blue$https://github.com/josylad*/
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      color: #2c3e50;
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 20px;
+      font-size: 10pt;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+      background-color: #3498db;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 28pt;
+      font-weight: 700;
+      margin: 0 0 10px 0;
+      color: #fff;
+    }
+
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 15px;
+      font-size: 10pt;
+      font-weight: 300;
+      color: #ecf0f1;
+    }
+
+    .contact-info div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+    }
+
+    .contact-info p {
+      margin: 0;
+      padding: 0 4px 0 4px;
+    }
+
+    .contact-info a {
+      color: #ecf0f1;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .contact-info a:hover {
+      color: #2c3e50;
+    }
+
+    .fab,
+    .fas {
+      margin-right: 5px;
+    }
+
+    h2 {
+      font-size: 18pt;
+      font-weight: 600;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 5px;
+      margin: 20px 0 15px 0;
+      color: #2c3e50;
+    }
+
+    .entry {
+      margin-bottom: 15px;
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 600;
+      color: #3498db;
+    }
+
+    .entry-details {
+      display: flex;
+      justify-content: space-between;
+      font-style: italic;
+      margin-bottom: 8px;
+      font-size: 9pt;
+      color: #7f8c8d;
+    }
+
+    .compact-list {
+      margin: 5px 0;
+      padding-left: 20px;
+    }
+
+    .compact-list li {
+      margin-bottom: 5px;
+    }
+
+    .two-column {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .two-column ul {
+      width: 48%;
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    a {
+      color: #3498db;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #2980b9;
+      text-decoration: underline;
+    }
+
+    .skills-section {
+      padding: 2px 15px;
+    }
+
+    @media print {
+      body {
+        padding: 0;
+        margin: 0 auto;
+        /* Center align */
+        font-size: 9pt;
+        background-color: #fff;
+        max-width: 698px;
+        /* Control width for A4 minus margins */
+        box-sizing: border-box;
+      }
+
+      @page {
+        margin: 1cm;
+        /* Or override: set to 0, rely only on printToPDF margins */
+      }
+
+      h1 {
+        font-size: 24pt;
+      }
+
+      h2 {
+        font-size: 16pt;
+      }
+
+      .contact-info {
+        font-size: 9pt;
+      }
+
+      .entry-details {
+        font-size: 8pt;
+      }
+
+      .compact-list {
+        padding-left: 15px;
+      }
+
+      header {
+        box-shadow: none;
+      }
+
+      .entry {
+        box-shadow: none;
+        padding: 1px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Agnel Anselm Fernando</h1>
+    <div class="contact-info">
+      <div>
+        <p class="fas fa-map-marker-alt">
+          <span>Chicago, United States</span>
+        </p>
+        <p class="fas fa-phone">
+          <span>+1 7798045404</span>
+        </p>
+        <p class="fas fa-envelope">
+          <span>gilesagnel@gmail.com</span>
+        </p>
+      </div>
+      <div>
+        <p>
+          <span class="fab fa-linkedin"></span>
+          <a href="https://www.linkedin.com/in/agnel-giles-627340112/">LinkedIn</a>
+          |
+        </p>
+        <p>
+          <span class="fab fa-github"></span>
+          <a href="https://github.com/AgnelFernando">GitHub</a>
+          |
+        </p>
+        <p>
+          <span class="fas fa-briefcase"></span>
+          <a href="https://www.agnel.bio/">Portfolio</a>
+        </p>
+      </div>
+    </div>
+  </header>
+  <section id="summary" class="summary">
+    <h2>Robotics Software Engineer</h2>
+    <div class="entry">
+      Results-driven Robotics Software Engineer with a Master’s in Artificial Intelligence from DePaul University and
+      hands-on experience in developing autonomous systems using Python and ROS. Proven ability to enhance robotic
+      capabilities through deep reinforcement learning and computer vision, while effectively collaborating with
+      cross-functional teams. Committed to continuous learning and adapting to emerging technologies in robotics and AI.
+      Brings 4.5 years of experience as a full-stack software engineer, building scalable software solutions using
+      Python, Java, and AWS.
+    </div>
+  </section>
+  <main>
+    <section id="education">
+      <h2>Education</h2>
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-name">DePaul University</span>
+          <span class="entry-location">Chicago, IL</span>
+        </div>
+        <div class="entry-details">
+          <span class="entry-title">Master's in Artificial Intelligence | Grade: 3.83</span>
+          <span class="entry-year">09/2023 – 2025</span>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-name">National Engineering College</span>
+          <span class="entry-location">Tirunelveli, India</span>
+        </div>
+        <div class="entry-details">
+          <span class="entry-title">Bachelor's in Mechanical Engineering | Grade: 3.1</span>
+          <span class="entry-year">08/2013 – 2017</span>
+        </div>
+      </div>
+    </section>
+    <section id="work-experience">
+      <h2>Work Experience</h2>
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-name">DePaul University</span>
+          <span class="entry-location">Chicago, IL, USA</span>
+        </div>
+        <div class="entry-details">
+          <span class="entry-title">Research Assistant</span>
+          <span class="entry-year">09/2023 – Present</span>
+        </div>
+        <ul class="compact-list">
+          <li>Creating a robot dog equipped with camera, 4 ultrasonic sensors, and AI to autonomously patrol and detect
+            unusual activities.</li>
+          <li>Fine-tuning an OpenVLA model for the UR3 robot arm to perform manipulation tasks.</li>
+          <li>Working on a funded project to control a UR3 robotic arm with a 5-channel EEG-based Brain-Computer
+            Interface (BCI) headset for painting and drawing on a canvas using brain signals.</li>
+          <li>Developing a Path Following Autonomous Vehicle using deep reinforcement learning to navigate unfamiliar
+            indoor environments with minimal prior knowledge.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-name">Bazaarvoice</span>
+          <span class="entry-location">Bangalore, India</span>
+        </div>
+        <div class="entry-details">
+          <span class="entry-title">Senior Software Engineer</span>
+          <span class="entry-year">05/2022 – 08/2023</span>
+        </div>
+        <ul class="compact-list">
+          <li>Improved application performance by reducing load time by 50%, and created a secured external API endpoint
+            using Google Apigee with rate limiting and authentication.</li>
+          <li>Integrated GenAI tools for review summarization, improving UX and automation.</li>
+          <li>Mentored a 6-member team; optimized system concurrency with threading and improved system performance
+            through containerization (Docker) and AWS deployments.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-name">Petnion</span>
+          <span class="entry-location">Remote</span>
+        </div>
+        <div class="entry-details">
+          <span class="entry-title">Founder</span>
+          <span class="entry-year">08/2020 – 02/2022</span>
+        </div>
+        <ul class="compact-list">
+          <li>Founded Petnion, a social media platform to connect pet owners and the broader pet community.</li>
+          <li>Architected a social media platform using Vue.js and Spring Boot API, facilitating 5,000+ pet owner
+            connections within the first 3 months after launch.</li>
+          <li>Integrated real-time chat functionality supporting over 10,000 concurrent users.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-name">Pentabay</span>
+          <span class="entry-location">Chennai, India</span>
+        </div>
+        <div class="entry-details">
+          <span class="entry-title">Senior Software Engineer</span>
+          <span class="entry-year">04/2019 – 05/2020</span>
+        </div>
+        <ul class="compact-list">
+          <li>Founded Petnion, a social media platform to connect pet owners and the broader pet community.</li>
+          <li>Architected a social media platform connecting pet owners using Vue.js, ProseMirror, Spring Boot API,
+            Ejabberd, and MySQL; facilitated 5,000+ pet owner connections within the first 3 months after launch.</li>
+          <li>Built an Android app for image and video sharing using Kotlin, with a backend in Spring Boot and FastAPI
+            for video processing.</li>
+          <li>Integrated real-time chat functionality using Ejabberd for web and Tinode (Go) for Android.</li>
+          <li>Led marketing initiatives and user acquisition strategies to grow the platform.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-name">Zoho</span>
+          <span class="entry-location">Chennai, India</span>
+        </div>
+        <div class="entry-details">
+          <span class="entry-title">Software Engineer Intern</span>
+          <span class="entry-year">01/2019 – 03/2019</span>
+        </div>
+        <ul class="compact-list">
+          <li>Contributed to the development of the Zoho Creator application using Java Struts and React.js.</li>
+        </ul>
+      </div>
+    </section>
+    <section id="side-projects">
+      <h2>Projects</h2>
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-name"><i class="fab fa-github"></i> <a
+              href="https://github.com/AgnelFernando/Cerberus">Cerberus</a></span>
+        </div>
+        <ul class="compact-list">
+          <li>Developed an autonomous patrol system on the Unitree Go1 robot dog, leveraging advanced navigation and
+            pose detection techniques.</li>
+          <li>Utilized technologies such as Python, MediaPipe, OpenCV, and MQTT for real-time robotic control.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-name"><i class="fab fa-github"></i> <a href="https://www.agnel.bio/">Mindscabe</a></span>
+        </div>
+        <ul class="compact-list">
+          <li>Created a brain-controlled art system, merging neuroscience and robotics, allowing users to create art
+            using thoughts.</li>
+          <li>Incorporated BCI and Websocket technologies for seamless interaction with the UR3 robotic arm.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-name"><i class="fab fa-github"></i> <a
+              href="https://github.com/AgnelFernando/TrajectoryFollowing">Trajectory Following Robot</a></span>
+        </div>
+        <ul class="compact-list">
+          <li>Developed a Path Following Autonomous Vehicle using deep reinforcement learning for navigation in
+            unfamiliar environments.</li>
+          <li>Employed ROS, Gazebo, Python, MATLAB, and PyTorch for simulation and real-world testing in various
+            applications.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-name"><i class="fab fa-github"></i> <a href="https://github.com/AgnelFernando/ur3-vla">Open
+              VLA on UR3</a></span>
+        </div>
+        <ul class="compact-list">
+          <li>Fine-tuned an OpenVLA model for the UR3 robot arm, enhancing its manipulation capabilities.</li>
+          <li>Employed RLTD and Python for controlling the arm, demonstrating proficiency in reinforcement learning
+            techniques.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-name"><i class="fab fa-github"></i> <a
+              href="https://github.com/gilesagnel/DRL-games/blob/main/README.md#breakout-atari-game">Atari Breakout
+              Game</a></span>
+        </div>
+        <ul class="compact-list">
+          <li>Developed a Deep Q-Network (DQN) agent for the Breakout Atari game, achieving consistent scores above 220.
+          </li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-name"><i class="fab fa-github"></i> <a
+              href="https://github.com/gilesagnel/DRL-games/blob/main/README.md#mountaincar-problem">Mountain Car
+              Problem</a></span>
+        </div>
+        <ul class="compact-list">
+          <li>Utilized Hindsight Experience Replay (HER) and Deep Q-Network (DQN) to achieve successful hill climbs in
+            95% of trials.</li>
+        </ul>
+      </div>
+    </section>
+    <section id="skills-languages">
+      <h2>Skills</h2>
+      <div class="skills-section">
+        <p><b>Machine Learning & Deep Learning:</b> TensorFlow, PyTorch, Deep Reinforcement Learning, Vision Language
+          Action Model, Diffusion model, scikit-learn, OpenCV, CNNs, Object Detection, ML Ops</p>
+        <p><b>Robotics & Simulation:</b> ROS, ROS2, MoveIt, SLAM, Nav2, Gazebo, Unity, Gym, Robot Manipulation, Motion
+          Planning, Hardware Integration, NVIDIA JetPack, Isaac Sim</p>
+        <p><b>Software Development:</b> C, C++, Python, Java, Spring Boot, Microservice, Hibernate</p>
+        <p><b>Systems & Cloud:</b> Linux, Ubuntu, Docker, AWS (SageMaker, RoboMaker, etc), Azure</p>
+        <p><b>Database:</b> MySQL, DynamoDB, Postgress</p>
+      </div>
+    </section>
+  </main>
+
+</body>
+
+</html>
