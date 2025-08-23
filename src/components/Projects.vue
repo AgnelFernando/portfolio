@@ -52,6 +52,15 @@ export default {
     data() {
         return {
             projects: [
+                { 
+                    name: 'Pick and Place using Robot Arm in Isaac Sim',
+                    link: undefined,
+                    image: require('../assets/images/projects/pickandplace.gif'),
+                    description: 'Implemented a pick-and-place task using a robotic arm in NVIDIA Isaac Sim',
+                    technologies: ['Isaac Sim', 'Python', 'ROS', 'Docker', 'Reinforcement Learning',
+                        'FoundationPose', 'Synthetic DETR'
+                    ]
+                },
                 {
                     name: 'UR3 VLA',
                     link: 'https://github.com/AgnelFernando/ur3-vla',
