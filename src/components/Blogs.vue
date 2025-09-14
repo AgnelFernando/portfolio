@@ -44,12 +44,12 @@ export default {
     data() {
         return {
             blogs: [
-                {
-                    name: 'Open VLA with UR3 Robot',
-                    image: require('../assets/images/blogs/openvla/header.jpg'),
-                    description: 'Lessons learnt from Controlling a UR3 Robot with Open VLA',
-                    link: '#/blog/openvla'
-                },
+                // {
+                //     name: 'Open VLA with UR3 Robot',
+                //     image: require('../assets/images/blogs/openvla/header.jpg'),
+                //     description: 'Lessons learnt from Controlling a UR3 Robot with Open VLA',
+                //     link: '#/blog/openvla'
+                // },
                 {
                     name: 'Walk these Ways - Paper Review',
                     image: require('../assets/images/blogs/wtw/header.png'),
