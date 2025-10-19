@@ -59,35 +59,12 @@ export default {
                     description: 'End-to-end recommendation system combining collaborative filtering (ALS) and content-based methods, with MLOps practices for model training, evaluation, and deployment.',
                     technologies: ['Python', 'ALS', 'scikit-learn', 'Pandas', 'MLflow', 'DVC', 'FastAPI', 'Docker']
                 },
-                { 
-                    name: 'Pick and Place using Robot Arm in Isaac Sim',
-                    link: undefined,
-                    image: require('../assets/images/projects/pickandplace.gif'),
-                    description: 'Implemented a pick-and-place task using a robotic arm in NVIDIA Isaac Sim',
-                    technologies: ['Isaac Sim', 'Python', 'ROS', 'Docker', 'Reinforcement Learning',
-                        'FoundationPose', 'Synthetic DETR'
-                    ]
-                },
                 {
                     name: 'UR3 VLA',
                     link: 'https://github.com/AgnelFernando/ur3-vla',
                     image: require('../assets/images/projects/ur3vla.gif'),
                     description: 'Fine-tuned an Open-VLA (Vision Language Action) model to operate a UR3 robot arm.',
                     technologies: ['Pytorch', 'Python', 'Imitation Learning', 'Deep Learning', 'VLA']
-                },
-                {
-                    name: 'Mindscape',
-                    link: undefined,
-                    image: require('../assets/images/projects/neurobrush.gif'),
-                    description: 'A brain-controlled art system that uses Emotiv BCI to command a UR3 robotic arm for drawing and painting. It blends neuroscience, robotics, and creativity—enabling users to create art using just their thoughts.',
-                    technologies: ['BCI', 'Websocket', 'UR3', 'Python']
-                },
-                {
-                    name: 'Cerberus',
-                    link: undefined,
-                    image: require('../assets/images/projects/cerberus.gif'),
-                    description: 'A robot dog equipped with camera, sensors, and intelligence to autonomously patrol and detect unusual activities.',
-                    technologies: ['Nav2', 'Ros2', 'SLAM', 'YOLOv8', 'Python']
                 },
                 {
                     name: 'Breakout',
@@ -104,11 +81,34 @@ export default {
                     technologies: ['Pytorch', 'Python', 'Reinforcement Learning', 'Deep Learning', 'PPO', 'A2C', 'DQN']
                 },
                 {
+                    name: 'Mindscape',
+                    link: undefined,
+                    image: require('../assets/images/projects/neurobrush.gif'),
+                    description: 'A brain-controlled art system that uses Emotiv BCI to command a UR3 robotic arm for drawing and painting. It blends neuroscience, robotics, and creativity—enabling users to create art using just their thoughts.',
+                    technologies: ['BCI', 'Websocket', 'UR3', 'Python']
+                },
+                {
                     name: 'Mountain Climping',
                     link: 'https://github.com/agnelfernando/DRL-games',
                     image: require('../assets/images/projects/mountain_car.gif'),
                     description: 'Play the Mountain Climbing game using Hindsight Experience Replay (HER) and Deep Q-Network (DQN)',
                     technologies: ['Pytorch', 'Python', 'Reinforcement Learning', 'Deep Learning', 'DQN', 'HER']
+                },
+                { 
+                    name: 'Pick and Place using Robot Arm in Isaac Sim',
+                    link: undefined,
+                    image: require('../assets/images/projects/pickandplace.gif'),
+                    description: 'Implemented a pick-and-place task using a robotic arm in NVIDIA Isaac Sim',
+                    technologies: ['Isaac Sim', 'Python', 'ROS', 'Docker', 'Reinforcement Learning',
+                        'FoundationPose', 'Synthetic DETR'
+                    ]
+                },
+                {
+                    name: 'Cerberus',
+                    link: undefined,
+                    image: require('../assets/images/projects/cerberus.gif'),
+                    description: 'A robot dog equipped with camera, sensors, and intelligence to autonomously patrol and detect unusual activities.',
+                    technologies: ['Nav2', 'Ros2', 'SLAM', 'YOLOv8', 'Python']
                 },
                 {
                     name: 'Trajectory Following',
