@@ -52,6 +52,13 @@ export default {
     data() {
         return {
             projects: [
+                {
+                    name: 'Hybrid Recommender as a Service',
+                    link: 'https://github.com/AgnelFernando/HybridRecommender',
+                    image: require('../assets/images/projects/recsys.gif'),
+                    description: 'End-to-end recommendation system combining collaborative filtering (ALS) and content-based methods, with MLOps practices for model training, evaluation, and deployment.',
+                    technologies: ['Python', 'ALS', 'scikit-learn', 'Pandas', 'MLflow', 'DVC', 'FastAPI', 'Docker']
+                },
                 { 
                     name: 'Pick and Place using Robot Arm in Isaac Sim',
                     link: undefined,
