@@ -2,7 +2,7 @@
   <div>
     <section id="home"
       class="flex flex-col-reverse md:flex-row justify-left xl:space-x-54 lg:space-x-34 sm:space-x-12 xl:p-8 xl:pt-1 pt-1 mx-auto mb-10">
-      <div class="w-100% flex m-12 mt-4 p-12 rounded-3xl bg-container-background container-shadow">
+      <div class="w-100% flex m-12 mt-4 p-8 rounded-3xl bg-container-background container-shadow">
         <div class="w-2/3 flex flex-col space-y-4 pr-20">
           <div class="mt-4 xl:mt-0">
             <h2 class="3xl:text-2xl text-container-title">
