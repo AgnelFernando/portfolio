@@ -23,7 +23,7 @@
           <div>
             <p
               class="text-sm lg:text-base leading-loose tracking-relaxed lg:leading-loose lg:tracking-relaxed text-container-body text-opacity-50 whitespace-pre-line">
-              {{ $t('Aboutme') }}</p>
+              {{ aboutMe}}</p>
           </div>
         </div>
         <div class="w-2/5 h-100% flex flex-col">
@@ -78,7 +78,17 @@ export default {
   components: { VLinks, Skills, Timeline, Projects, Blogs },
   data() {
     return {
-      dataTimeline: []
+      dataTimeline: [],
+      aboutMe: "Hey there! I’m Agnel — an applied Machine Learning Engineer with 5+ years of "+
+      "software engineering experience and a Master’s degree in Artificial Intelligence from "+
+      "DePaul University. \nI focus on building intelligent, personalized systems that live "+
+      "close to real-world devices and human signals. My work sits at the intersection of "+
+      "machine learning, sensor data, and production software turning raw signals into adaptive, "+
+      "user-aware behavior. I’ve built and deployed end-to-end ML systems across wearables, "+
+      "biosignals, and embodied AI, working with time-series data such as EEG, activity, and "+
+      "physiological signals. \nMy experience includes model development, MLOps pipelines, "+
+      "on-device–aware inference, and scalable cloud deployment. Long term, I aim to build products that make devices smarter, "+
+      "more personal, and more human-centered."
     };
   },
   computed: {

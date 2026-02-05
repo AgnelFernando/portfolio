@@ -6,7 +6,6 @@
     "Hello": "Hi 👋🏼! I am",
     "myName": "Agnel Fernando",
     "job": "Machine Learning Engineer",
-    "Aboutme": "Hey there! I'm Agnel, a Machine Learning Engineer with 4.5 years of experience in software engineering and a Master’s degree in Artificial Intelligence from DePaul University.\nI specialize in building scalable, cloud-native applications and have hands-on experience developing end-to-end machine learning systems with MLOps. My research background includes deep reinforcement learning for robotic control, fine-tuning vision-language-action (VLA) models, and designing embedded models for EEG brain signal classification.\nI’ve trained and deployed machine learning and deep learning models across domains such as computer vision, recommendation systems, and language models. I’ve also built RAG pipelines using LLMs and fine-tuned foundation models for task-specific applications.",
     "iwork": "I work with...",
     "Myprojects": "Some of my projects...",
     "seeResume": "View Resume",
