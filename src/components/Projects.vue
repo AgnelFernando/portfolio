@@ -84,8 +84,8 @@ export default {
                     name: 'Mindscape',
                     link: undefined,
                     image: require('../assets/images/projects/neurobrush.gif'),
-                    description: 'A brain-controlled art system that uses Emotiv BCI to command a UR3 robotic arm for drawing and painting. It blends neuroscience, robotics, and creativity—enabling users to create art using just their thoughts.',
-                    technologies: ['BCI', 'Websocket', 'UR3', 'Python']
+                    description: 'A brain-controlled art system that uses Emotiv BCI to command a UR3 robotic arm for drawing and painting. Trained ML models to interpret EEG signals into drawing commands.',
+                    technologies: ['BCI', 'EEG', 'ML', 'Pytorch', 'Python']
                 },
                 {
                     name: 'Mountain Climping',

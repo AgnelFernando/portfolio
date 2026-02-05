@@ -75,7 +75,9 @@ export default {
                     <li>Transformed monolithic applications into a server-client architecture.</li>
                   </ul>`, type: 'exp', link: "https://www.bazaarvoice.com/"
         },
-        { title: 'Depaul University', subtitle: 'MS in Artificial Intelligence', date: 'Aug 2023 - Present', description: `Currently pursuing a Master's degree in Artificial Intelligence, with a focus on Deep Reinforcement Learning and Computer Vision.`, type: 'edu', link: "https://www.depaul.edu/" },
+        { title: 'Depaul University', subtitle: 'MS in Artificial Intelligence', date: 'Aug 2023 - June 2025', description: `Completed my Master's degree in Artificial Intelligence, with a 3.8 GPA.`, type: 'edu', link: "https://www.depaul.edu/" },
+        { title: 'Software Engineer, AI/ML', subtitle: 'Ganance', date: 'Nov 2025 - Present', description: `Designed and implemented MVVM-based Android architecture to improve reliability and testability.
+Updated backend data models with improved indexing and built Firebase serverless aggregation pipelines for wearable fitness data.`, type: 'exp', link: "https://ganance.com/" }
       ].reverse(),
     };
   },
